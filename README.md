@@ -23,7 +23,7 @@ Build a ROS-based software architecture that allows a 4 wheel holonomic robot to
  ### 1.3 Implementation
  
  #### 1.3.1 Main hardware components
- 
+  
  - **4 DC motors** of 9.0V and Gear Ratio of 1/75 
  - **4 mechanum wheels**
  - **arduino due**
@@ -33,7 +33,9 @@ Build a ROS-based software architecture that allows a 4 wheel holonomic robot to
  - **RPi UPS POWERPACK** for raspberry
  - **Raspberry Pi Camera V2**
  
- 
+ <p align="center">
+  <img src="project/IMG_20200210_183756.jpg" width="200">
+</p>
  
  ## 2. General structure
  
@@ -50,10 +52,28 @@ Build a ROS-based software architecture that allows a 4 wheel holonomic robot to
  7. kick the ball 
  
  ### 2.1 Finite state machine
+ <p align="center">
+  <img src="project/FSM.jpg">
+ </p>
+ 
+ 1. **MISSION 1**: detection of the red ball by *Detection_ball* node
+ 2. **MISSION 2**
+ 3. **MISSION 3**
+ 4. **MISSION 4**
+ 5. **MISSION 5**
+ 6. **MISSION 6**
  
  
+ ### 2.2 Nodes diagram 
  
- ### 2.2 rqt_graph 
+ <p align="center">
+  <img src="project/Node_Diagram.jpg">
+ </p>
+ 
+ ### 2.3 rqt_graph 
+ <p align="center">
+  <img src="project/RQT.png">
+ </p>
  
  
  
@@ -83,7 +103,6 @@ Build a ROS-based software architecture that allows a 4 wheel holonomic robot to
  This package contains the 2D map of the arena. The map is centered in the center of the gazebo environment. 
     
  #### 3.1.3 robot_vision
- 
  This package contains two nodes:
  - *example_ball*: this node allows to:
    - detect the red ball
@@ -93,15 +112,15 @@ Build a ROS-based software architecture that allows a 4 wheel holonomic robot to
   - *fake_laser*: this node allow to simulate the information received from a laser with a position in the center of the environment. This information is important to fill the laser information topic needed as input of the mave_base package
   
  #### 3.1.4 navigation
- 
  This package contains all the packages for the navigation of the robot:
  
  - *move_base*: description of the package at [roswiki documentation](http://wiki.ros.org/move_base)
  - *costmap_2d*: description of the package at [roswiki documentation](http://wiki.ros.org/costmap_2d)
  
  #### 3.1.5 robot_control
- 
- This package contains the nodes necessary for controlthe robot 
+ This package contains three files:
+ - *BallPosePub*: node that publish the (x,y) position of the ball
+ - *central_control*: central node of the 
  
  #### 3.1.1 launch_pkg
  
