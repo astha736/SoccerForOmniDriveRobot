@@ -36,6 +36,8 @@ Build a ROS-based software architecture that allows a 4 wheel holonomic robot to
  <p align="center">
   <img src="project/IMG_20200210_183756.jpg" width="200">
 </p>
+
+
  
  ## 2. General structure
  
@@ -217,6 +219,8 @@ Build a ROS-based software architecture that allows a 4 wheel holonomic robot to
  
  For problems *1* and *2* up to now there still no solution, instead for problem *3* the solution is given by the structure of the software architecture. Recalling that our code is based on the knowledge of absolute position of the robot provided in real time by the *motion capture system*, during each missions the robot is able to correct the trajectory in real time.
  
+ 
+[![Watch the video](project/IMG_20200210_183756.jpg)]( https://drive.google.com/open?id=1EjpCvYzELLbGPNdnpd7hVE_TPOs3Bl0I)
  
  
  
