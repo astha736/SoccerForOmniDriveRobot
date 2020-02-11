@@ -55,7 +55,7 @@ Build a ROS-based software architecture that allows a 4 wheel holonomic robot to
  
  ### 2.1 Finite state machine
  <p align="center">
-  <img src="project/FSM.jpg">
+  <img src="RobotMotion_16MB.gif">
  </p>
  
  1. **MISSION 1**: detection of the red ball by *Detection_ball* node
