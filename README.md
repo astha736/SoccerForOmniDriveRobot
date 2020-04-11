@@ -12,7 +12,7 @@
   <img src="project/Sim3.gif">
  </p>
 
-*REMARK: For this project, we have decided to not refresh the position of the ball during the phase of pushing of the ball by the robot. More details will be given later in the readme.]  
+*REMARK: For this project, we have decided to not refresh the position of the ball during the phase of pushing of the ball by the robot. More details will be given later in the readme.*  
 
 ###  Constraints 
 
